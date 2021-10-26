@@ -14,7 +14,6 @@ class Home extends Component {
       titulo: '',
       idTipoEventoAlterado: 0
     })
-    // Exibe no console do navegador a mensagem abaixo
     console.log('Os states foram resetados!')
   };
 
@@ -22,7 +21,6 @@ class Home extends Component {
     console.log("Agora vamos fazer a chamada para a API")
     var inputR = document.getElementById("inputId")
 
-    //Informamos o end point.
     console.log(inputR.value)
     fetch(`https://api.github.com/users/${inputR.value}/repos?per_page=10`)
       .then(resposta => resposta.json())
