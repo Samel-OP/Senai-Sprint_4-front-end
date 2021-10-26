@@ -47,6 +47,10 @@
   cursor: pointer;
 }
 
+.btnParar:hover{
+  background-color: crimson;
+}
+
 .btnContinuar {
   width: 150px;
   height: 40px;
@@ -59,6 +63,10 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.btnContinuar:hover {
+  background-color: darkgreen;
 }
 
 @keyframes App-logo-spin {
