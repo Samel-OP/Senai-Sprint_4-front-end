@@ -22,7 +22,7 @@ class Home extends Component {
     var inputR = document.getElementById("inputId")
 
     console.log(inputR.value)
-    fetch(`https://api.github.com/users/${inputR.value}/repos?per_page=10`)
+    fetch(`https://api.github.com/users/${inputR.value}/repos?per_page=10&sort=author-date-desc`)
       .then(resposta => resposta.json())
       .then(dados => this.setState({ listaRepository: dados }))
       .catch(erro => console.log(erro))
